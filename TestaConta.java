@@ -1,17 +1,17 @@
+package ex;
 
 public class TestaConta {
 
 	public static void main(String[] args) {
-	
-		Conta c = new Conta();
 		
-		c.saldo = 10000.0;
-		c.nrAgencia = "1";
-		c.titular = "FULANO";
-		c.nrConta = "01945";
-		c.codBanco = 234;
+		Conta c1 = new Conta("123456", "Arthur", "123-3", 01);
 		
-		c.imprimirDadosConta();
+		c1.imprimirDados();
+		c1.saque(500);
+		c1.imprimirDados();
+		c1.deposito(500);
+		c1.imprimirDados();
+		System.out.println("Saldo: "+ c1.getSaldo());
 
 	}
 

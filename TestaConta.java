@@ -1,18 +1,20 @@
-package ex;
 
 public class TestaConta {
 
 	public static void main(String[] args) {
 		
-		Conta c1 = new Conta("123456", "Arthur", "123-3", 01);
-		
+		Conta c1 = new Conta();
 		c1.imprimirDados();
-		c1.saque(500);
-		c1.imprimirDados();
-		c1.deposito(500);
-		c1.imprimirDados();
-		System.out.println("Saldo: "+ c1.getSaldo());
+		Poupanca p1 = new Poupanca();
+		Poupanca p2 = new Poupanca(1000.0, "123-3", "Titular", "01");
 
+		
+		
+		
+		
 	}
 
 }
+
+
+// FALTA COISA
